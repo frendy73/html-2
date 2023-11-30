@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+<header class="bg-gray-200 text-center p-3">
+    <nav>
+        <ul class="list-none p-0 flex justify-center">
+            <li class="mx-3"><a href="index.html" class="text-decor-none text-dark font-bold">Главная</a></li>
+            <li class="mx-3"><a href="about.html" class="text-decor-none text-dark font-bold">О нас</a></li>
+            <li class="mx-3"><a href="contact.html" class="text-decor-none text-dark font-bold">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="p-20 text-center">
+    <h1 class="text-3xl text-dark mb-3">Свяжитесь с нами</h1>
+    <div class="max-w-md mx-auto">
+        <p class="text-dark">Телефон: +7 123 456 7890</p>
+        <p class="text-dark">Email: info@mycompany.ru</p>
+        <p class="text-dark">Адрес: г. Москва, ул. Примера, д. 10</p>
+    </div>
+</section>
+
+<section class="max-w-md mx-auto p-3">
+    <form action="submit_form.php" method="post" class="flex flex-col">
+        <input type="text" name="name" placeholder="Ваше имя" class="p-2 my-2 border border-gray-300" required>
+        <input type="email" name="email" placeholder="Ваш email" class="p-2 my-2 border border-gray-300" required>
+        <textarea name="message" placeholder="Ваше сообщение" class="p-2 my-2 border border-gray-300" required></textarea>
+        <button type="submit" class="bg-gray-800 text-white p-2 mt-3 hover:bg-gray-900">Отправить</button>
+    </form>
+</section>
+
+<footer class="bg-gray-200 text-center p-3 fixed bottom-0 w-full">
+    <p class="text-dark">&copy; 2023 Моя компания. Все права защищены.</p>
+</footer>
+</body>
+</html>
